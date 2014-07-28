@@ -82,4 +82,12 @@ public class MyActivity extends Activity {
 
     }
 
+    /* send implict intent to com.x.abc */
+    public void requestABCService(View view) {
+        Intent intent = new Intent();
+        intent.setAction("com.x.abc");
+        startService(intent);
+
+    }
+
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConfusionService/ConfusionService.iml" filepath="$PROJECT_DIR$/ConfusionService/ConfusionService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfusionServiceProject.iml" filepath="$PROJECT_DIR$/ConfusionServiceProject.iml" />
+    </modules>
+  </component>
+</project>
+
