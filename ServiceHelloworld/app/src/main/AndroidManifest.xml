@@ -24,8 +24,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".GPSService"
-            android:exported="true">
+            android:name=".GPSService">
             <intent-filter
                 android:priority="100">
                 <action android:name="com.x.gps" />
