@@ -1,6 +1,8 @@
 package com.example.kying.servicehelloworld;
 
 import android.os.Bundle;
+import android.view.View;
+
 /**
  * Created by kailiangying on 8/4/14.
  *
@@ -12,5 +14,7 @@ public class MainEntry {
         MyActivity ma = new MyActivity();
         Bundle bd = new Bundle();
         ma.onCreate(bd);
+        View view = null;
+        ma.startGPSService(view);
     }
 }
