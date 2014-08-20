@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends Activity {
@@ -35,7 +36,35 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+    /*
+        test button event
+     */
+    public void startIntent(View view) {
+        Intent intent = getIntent();
+        //TODO: detection not path sensitive currently
 
+        if(intent != null) {
+
+            // SOURCE :
+            Intent intent1 = intent.getParcelableExtra("Next_Intent");
+
+            if(intent1 != null) {
+
+                try {
+
+                    Log.d("AMIT", "Step stone - public activity");
+
+                    // SINK :
+                    startActivity(intent1);
+
+                } catch (Exception e) {
+
+                    Log.d("AMIT", e.getLocalizedMessage());
+                }
+            }
+
+        }
+    }
     @Override
     protected void onResume() {
         super.onResume();

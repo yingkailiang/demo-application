@@ -10,7 +10,15 @@
 
     <TextView
         android:text="Public Activity"
+        android:id="@+id/pubTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startIntent"
+        android:layout_alignTop="@+id/pubTextView"
+        android:text="test" />
 
 </RelativeLayout>
