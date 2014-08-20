@@ -89,28 +89,28 @@ public class MainActivity extends Activity {
         */
         // ---------------------------------------------------------------------------
 
-        Intent intent = getIntent();
-
-        if(intent != null) {
-
-            // SOURCE :
-            Intent intent1 = intent.getParcelableExtra("Next_Intent");
-
-            if(intent1 != null) {
-
-                try {
-
-                    Log.d("AMIT", "Step stone - public activity");
-
-                    // SINK :
-                    startActivity(intent1);
-
-                } catch (Exception e) {
-
-                    Log.d("AMIT", e.getLocalizedMessage());
-                }
-            }
-
-        }
+//        Intent intent = getIntent();
+//
+//        if(intent != null) {
+//
+//            // SOURCE :
+//            Intent intent1 = intent.getParcelableExtra("Next_Intent");
+//
+//            if(intent1 != null) {
+//
+//                try {
+//
+//                    Log.d("AMIT", "Step stone - public activity");
+//
+//                    // SINK :
+//                    startActivity(intent1);
+//
+//                } catch (Exception e) {
+//
+//                    Log.d("AMIT", e.getLocalizedMessage());
+//                }
+//            }
+//
+//        }
     }
 }
